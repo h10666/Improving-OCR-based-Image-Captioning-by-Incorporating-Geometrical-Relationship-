@@ -1,0 +1,12 @@
+CUDA_VISIBLE_DEVICES=0,1 python eval.py \
+  --input_json ../../data/step5_3_eccvrel+mmrel_google+base_test/TC.pkl \
+  --split test \
+  --dump_images 0 \
+  --dump_json 1 \
+  --output_json /localdisk2/jwang195/results/base+spatial/1111-1/test/test.json \
+  --num_images -1 \
+  --model /localdisk2/jwang195/results/base+spatial/1111-1/log_show_attend_tell_cat/model-best.pth \
+  --infos_path /localdisk2/jwang195/results/base+spatial/1111-1/log_show_attend_tell_cat/infos_show_attend_tell_cat-best.pkl \
+  --language_eval 0 \
+  --beam_size 2 \
+  --verbose_beam 0
